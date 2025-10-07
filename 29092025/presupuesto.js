@@ -12,3 +12,16 @@ function mostrarPresupuesto(){
 }
 btnDistribuirPpto=document.getElementById("distribuir");
 btnDistribuirPpto.addEventListener("click", mostrarPresupuesto);
+
+function mostrarMulti(){
+  multi=parseInt(document.getElementById("cajaMulti").value, 10);
+
+    text="";
+
+    for (i = 1; i <= 10; i++) {
+            text=text+multi+" "+"x"+" "+i+" "+"="+" "+(multi*i)+"\n";
+    }
+    document.getElementById("area1").value=text;
+}
+btnMul=document.getElementById("multiplicar");
+btnMul.addEventListener("click", mostrarMulti);
